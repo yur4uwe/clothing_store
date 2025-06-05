@@ -10,3 +10,35 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+.container {
+    padding: 0 16px;
+}
+
+.black-text {
+    color: #000;
+}
+
+.grey-text {
+    color: #666;
+}
+
+.white-text {
+    color: #fff;
+}
+
+/* Big Screen */
+:root {
+    --big-header-txt: 64px;
+    --md-header-txt: 48px;
+    --small-header-txt: 36px;
+}
+
+/* Small screen */
+@media (max-width: 600px) {
+    :root {
+        --big-header-txt: 36px;
+        --md-header-txt: 24px;
+        --small-header-txt: 18px;
+    }
+}
