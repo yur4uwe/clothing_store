@@ -10,7 +10,7 @@ const Subscribe = () => {
             <h1 className='white-text'>Subscribe</h1>
             <p className='white-text'>To get special offers and VIP treatment:</p>
             <input className='grey-text' type="email" placeholder='Enter e-mail' />
-            <input className='white-text subscribe-button' type="submit" value="Subscribe" />
+            <button className='white-text subscribe-button' type="submit" >Subscribe</button>
         </form>
     );
 };

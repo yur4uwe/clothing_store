@@ -1,0 +1,25 @@
+input {
+    font: inherit;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 12px;
+}
+
+.contact-form input,
+.contact-form button {
+    font-size: 12px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font: inherit;
+    width: 100%;
+}

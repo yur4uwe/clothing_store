@@ -3,7 +3,7 @@
     padding-bottom: 32px;
 }
 
-input[type="email"] {
+input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -15,7 +15,8 @@ input[type="email"] {
 .subscribe-button {
     background-color: #f44336;
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
+    border: none;
     font-size: 16px;
+    font: inherit;
 }

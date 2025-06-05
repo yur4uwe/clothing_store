@@ -1,0 +1,12 @@
+.store>p {
+    font-size: 12px;
+}
+
+.store>p>i {
+    margin-right: 4px;
+}
+
+.media-links i {
+    font-size: 18px;
+    margin-right: 4px;
+}
