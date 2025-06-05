@@ -11,6 +11,11 @@ code {
         monospace;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
 .container {
     padding: 0 16px;
 }
@@ -27,11 +32,34 @@ code {
     color: #fff;
 }
 
+.red-text {
+    color: #f44336;
+}
+
+.black-background {
+    background-color: #000;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
 /* Big Screen */
 :root {
     --big-header-txt: 64px;
     --md-header-txt: 48px;
     --small-header-txt: 36px;
+    --grid-dir: row;
+    --grid-col-dir: column;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --grid-dir: column;
+        --grid-col-dir: row;
+    }
+
 }
 
 /* Small screen */

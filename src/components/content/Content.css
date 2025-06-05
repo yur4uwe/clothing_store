@@ -1,3 +1,24 @@
 .content-heading {
     margin: 1em 0;
 }
+
+.clothing-grid {
+    display: flex;
+    flex-direction: var(--grid-dir);
+}
+
+.no-items {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+    font-size: var(--small-header-txt);
+}
+
+.no-items .fa-ban {
+    font-size: 2em;
+}
+
+.cl-grid-col {
+    display: flex;
+    flex-direction: var(--grid-col-dir);
+}

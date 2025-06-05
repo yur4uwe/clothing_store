@@ -1,0 +1,14 @@
+.clothing-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-text {
+    margin: 1em 0;
+}
+
+.item-price {}
+
+.item-price.on-sale {
+    color: red;
+}

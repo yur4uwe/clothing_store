@@ -1,9 +1,21 @@
 import React from 'react';
+import './ClothingCard.css';
 
-const ClothingCard = () => {
+/**
+ * @typedef {Object} ClothingCardProps
+ * @property {import('../content/Content').ClothingItem} item
+ */
+
+/** @type {React.FC<ClothingCardProps>} */
+const ClothingCard = ({ item }) => {
     return (
-        <div>
-
+        <div className='container clothing-card'>
+            <span className='special'></span>
+            <img className='image' src={item.image} alt={`${item.name} photo`} />
+            <div className="item-text">
+                <div className='item-name'>{item.name}</div>
+                <b className={`item-price ${item.sale ? 'red-text' : ''}`}>${item.price}</b>
+            </div>
         </div>
     );
 };

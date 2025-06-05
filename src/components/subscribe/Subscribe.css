@@ -1,0 +1,21 @@
+.subscribe {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font: inherit;
+    margin-bottom: 1em;
+}
+
+.subscribe-button {
+    background-color: #f44336;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
