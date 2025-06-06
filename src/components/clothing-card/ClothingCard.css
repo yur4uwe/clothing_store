@@ -17,4 +17,9 @@
     top: 0;
     left: 16px;
     padding: 0.01em 8px;
+    z-index: 1;
+}
+
+.clothing-card>.image {
+    filter: grayscale(75%);
 }

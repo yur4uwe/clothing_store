@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './SideBar.css';
 
 /**
- * @param {{ isOpen: boolean, toggleSidebar: () => void }} props
+ * @param {{ isOpen: boolean, toggleSidebar: () => void, openNewsletter: () => void }} props
  */
-const SideBar = ({ isOpen, toggleSidebar }) => {
-    const [isJeansExtended, setIsJeansExtended] = useState(false);
+const SideBar = ({ isOpen, toggleSidebar, openNewsletter }) => {
+    const [isJeansExtended, setIsJeansExtended] = useState(true);
 
     return (
         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
@@ -16,10 +16,10 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
             <div className='side-bar-content'>
                 <a className='item bar-item grey-text' href="#">Shirts</a>
                 <a className='item bar-item grey-text' href="#">Dresses</a>
-                <a className='item bar-item grey-text' href="#">
+                <a className='item bar-item grey-text' onClick={() => setIsJeansExtended(!isJeansExtended)}>
                     Jeans {isJeansExtended ?
-                        <i className='fa fa-caret-up' onClick={() => setIsJeansExtended(false)}></i> :
-                        <i className='fa fa-caret-down' onClick={() => setIsJeansExtended(true)}></i>
+                        <i className='fa fa-caret-up'></i> :
+                        <i className='fa fa-caret-down'></i>
                     }
                 </a>
                 {isJeansExtended && (
@@ -38,7 +38,7 @@ const SideBar = ({ isOpen, toggleSidebar }) => {
             </div>
             <div className='side-bar-nav'>
                 <a className='item nav-item' href="#footer">Contact</a>
-                <a className='item nav-item' href="#footer">Newsletter</a>
+                <a className='item nav-item' onClick={openNewsletter} style={{ cursor: "pointer" }}>Newsletter</a>
                 <a className='item nav-item' href="#footer">Subscribe</a>
             </div>
         </div>
