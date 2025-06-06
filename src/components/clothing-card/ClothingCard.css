@@ -1,5 +1,4 @@
 .clothing-card {
-    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -15,11 +14,41 @@
 .special {
     position: absolute;
     top: 0;
-    left: 16px;
+    left: 0;
     padding: 0.01em 8px;
     z-index: 1;
 }
 
 .clothing-card>.image {
     filter: grayscale(75%);
+}
+
+.image-container {
+    position: relative;
+}
+
+.buy-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    border: none;
+    padding: 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font: inherit;
+    text-wrap: nowrap;
+}
+
+.buy-now-btn i {
+    margin-left: 8px;
+}
+
+.container.clothing-card:hover .buy-now-btn {
+    opacity: 1;
 }

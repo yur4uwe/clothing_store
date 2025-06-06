@@ -31,7 +31,7 @@ const Content = () => {
             name: 'Mega Ripped Jeans',
             image: 'https://www.w3schools.com/w3images/jeans2.jpg',
             price: '19.99',
-            newItem: true,
+            newItem: false,
             sale: false
         },
         {
@@ -39,7 +39,7 @@ const Content = () => {
             name: 'Mega Ripped Jeans',
             image: 'https://www.w3schools.com/w3images/jeans2.jpg',
             price: '19.99',
-            newItem: false,
+            newItem: true,
             sale: false
         },
         {
@@ -64,7 +64,7 @@ const Content = () => {
             image: 'https://www.w3schools.com/w3images/jeans4.jpg',
             price: '14.99',
             newItem: false,
-            sale: false
+            sale: true
         },
         {
             id: '7',
@@ -72,7 +72,7 @@ const Content = () => {
             image: 'https://www.w3schools.com/w3images/jeans4.jpg',
             price: '14.99',
             newItem: false,
-            sale: true
+            sale: false
         },
         {
             id: '8',

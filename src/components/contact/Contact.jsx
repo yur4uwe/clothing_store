@@ -6,7 +6,10 @@ const Contact = () => {
         <div className='contact'>
             <h4>Contact</h4>
             <p>Questions? Go ahead.</p>
-            <form className='contact-form'>
+            <form className='contact-form' onSubmit={(e) => {
+                e.preventDefault();
+                console.log('Form submitted');
+            }}>
                 <input placeholder='Name' type="text" name="name" id="name" />
                 <input placeholder='Email' type="email" name="email" id="email" />
                 <input placeholder='Subject' type="text" name="subject" id="subject" />
