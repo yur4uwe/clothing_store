@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/header/Header';
 import Banner from './components/banner/Banner';
 import SideBar from './components/side-bar/SideBar';
+import Calculator from './components/calculator/Calculator';
 import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
 import Subscribe from './components/subscribe/Subscribe';
@@ -45,6 +46,7 @@ function App() {
                 <div className="main-content">
                     <Header toggleSidebar={toggleSidebar} />
                     <Banner />
+                    <Calculator />
                     <Content />
                     <Subscribe />
                     <Footer />
