@@ -1,4 +1,5 @@
 .clothing-card {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -7,8 +8,13 @@
     margin: 1em 0;
 }
 
-.item-price {}
-
 .item-price.on-sale {
     color: red;
+}
+
+.special {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    padding: 0.01em 8px;
 }

@@ -10,7 +10,11 @@ import './ClothingCard.css';
 const ClothingCard = ({ item }) => {
     return (
         <div className='container clothing-card'>
-            <span className='special'></span>
+            {item.sale ? (
+                <span className='special black-background white-text'>Sale</span>
+            ) : item.newItem ? (
+                <span className='special black-background white-text'>New</span>
+            ) : null}
             <img className='image' src={item.image} alt={`${item.name} photo`} />
             <div className="item-text">
                 <div className='item-name'>{item.name}</div>

@@ -100,8 +100,8 @@ const Content = () => {
 
 
     return (
-        <div className='container'>
-            <div className="content-heading grey-text">{items.length} {items.length === 1 ? "item" : "items"}</div>
+        <>
+            <div className="content-heading grey-text container">{items.length} {items.length === 1 ? "item" : "items"}</div>
             <div className='grid-container'>
                 {gridContent.length > 0 ? (
                     <div className="clothing-grid">
@@ -114,8 +114,7 @@ const Content = () => {
                     </div>
                 }
             </div>
-
-        </div>
+        </>
     );
 };
 

@@ -24,3 +24,26 @@
     font-size: 24px;
     margin-left: 16px !important;
 }
+
+.small-header {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+
+.small-header .header-title {
+    letter-spacing: 4px;
+
+}
+
+.small-header .fa-bars {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+    .small-header {
+        display: flex;
+    }
+}
